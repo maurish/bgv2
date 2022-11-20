@@ -1,0 +1,31 @@
+{
+  "name": "bgv2",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npm test --ws",
+    "lint": "npm run lint --ws",
+    "dev": "run-p dev:*",
+    "dev:frontend": "npm run start --workspace=@bgv2/frontend",
+    "dev:backend": "npm run dev --workspace=@bgv2/backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maurish/bgv2.git"
+  },
+  "author": "Pauli Perälä",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maurish/bgv2/issues"
+  },
+  "homepage": "https://github.com/maurish/bgv2#readme",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
