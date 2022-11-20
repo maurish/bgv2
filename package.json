@@ -6,7 +6,8 @@
     "lint": "npm run lint --ws",
     "dev": "run-p dev:*",
     "dev:frontend": "npm run start --workspace=@bgv2/frontend",
-    "dev:backend": "npm run dev --workspace=@bgv2/backend"
+    "dev:backend": "npm run dev --workspace=@bgv2/backend",
+    "migrations": "db-migrate up"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
     "backend"
   ],
   "devDependencies": {
+    "db-migrate-pg": "^1.2.2",
+    "sqlite3": "^5.1.2",
     "typescript": "^4.9.3"
   }
 }

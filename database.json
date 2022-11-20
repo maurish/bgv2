@@ -1,0 +1,14 @@
+{
+  "test": {
+    "driver": "sqlite3",
+    "filename": ":memory:"
+  },
+
+  "dev": {
+    "driver": "pg",
+    "user": "postgres",
+    "password": "supersecret",
+    "host": "127.0.0.1",
+    "database": "bgv2"
+  }
+}
